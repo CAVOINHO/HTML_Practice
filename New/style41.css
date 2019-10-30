@@ -1,0 +1,22 @@
+h2{
+  color: powderblue;
+  text-align: center;
+  font-size: 220%;
+}
+
+body{
+  background-color: gray;
+}
+
+a:link, a:visited{
+  background-color: tomato;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:active, a:hover{
+  background-color: blue;
+}

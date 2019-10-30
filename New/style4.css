@@ -1,0 +1,22 @@
+h1{
+  color: white;
+  text-align: center;
+  border: 2px solid white;
+}
+a:link{
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover, a:active{
+  color: pink;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:visited{
+   color: powderblue;
+   background-position: transparent;
+   text-decoration: overline;
+}

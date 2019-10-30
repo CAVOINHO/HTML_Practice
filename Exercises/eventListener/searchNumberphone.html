@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="searchInput" placeholder="Search by phone number..." />
+  <ul id="userList">
+
+  </ul>
+  <script >
+    var users = [
+	{
+  	name: 'Thinh',
+    phone: '070123123'
+  },
+  {
+  	name: 'Hung',
+    phone: '080456456'
+  },
+  {
+  	name: 'Hoang',
+    phone: '090123123'
+  }
+];
+var userList = document.getElementById('userList');
+var searchInput = document.getElementById('searchInput');
+
+function render(users) {
+	var content = users.map(function(user) {
+  	return '<li>' + user.name + ' - ' + user.phone + '</li>';
+  });
+  userList.innerHTML = content.join('');
+}
+
+render(users);
+
+searchInput.addEventListener('keyup', function(event) {
+  var value = searchInput.value;
+  var find = users.filter(function(x){
+    return x.phone.indexOf(value) !== -1;
+  });
+  render(find);
+  console.log(value);
+});
+  </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+      .cities {
+        background-color: tomato;
+        margin: 20px;
+        padding: 10px;
+        color: green;
+        font-size: 20px;
+      }
+      .city {
+        background-color: black;;
+        color: white;
+        padding: 10px;
+        margin: 20px;
+      }
+  </style>
+</head>
+<body>
+  <button onclick="myFunction()">Hiden elements</button>
+  <div class="cities">
+      <h2>Lodon</h2>
+      <p>Lodon is the capital of England.</p>
+  </div>
+  <div class="cities">
+      <h2>Hanoi</h2>
+      <p>Hanoi is the capital of Vietnam.</p>
+  </div>
+  <div class="cities">
+      <h2>Tokyo</h2>
+      <p>Tokyo is the capital of Japan.</p>
+  </div>
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+  <script>
+    function myFunction(){
+      var x = document.getElementsByClassName("city");
+      for(var i = 0; i < x.length; i++){
+        x[i].style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
