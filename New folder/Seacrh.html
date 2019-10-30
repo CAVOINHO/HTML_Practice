@@ -1,0 +1,28 @@
+<input type="text" id="searchBox" placeholder="Search..." />
+<button id='newText' style='text'>Search</button>
+<button>Clear</button>
+<ul id="foo">
+  <li>Xin chào</li>
+  <li>Hello</li>
+</ul>
+<script>
+function searBos(){
+		var input = document.getElementsById('searchBox');
+    var newItem  = input.value;
+    foo.push(newItem);
+    foo();
+}
+  var foo = [
+    'Cây màu hồng',
+    'Lá màu đỏ',
+    'Hoa màu lam'
+    ];
+  function act(){
+    var htmlList = Document.getElementsById('foo')
+    var content = foo.map(function(a){
+      return '<li>'+ a + '</li>';
+    });
+    htmlList.innerHTML = content.join('');
+  }
+  act();
+</script>

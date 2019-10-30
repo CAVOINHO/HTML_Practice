@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style media="screen">
+      #d1: display{
+        color: powderblue;
+        background-position: transparent;
+        text-decoration: overline;
+      }
+  </style>
+</head>
+<body>
+    <h2 style="color: powderblue">The time now</h2>
+    <h3 id="day" style="color: red"></h3>
+    <button id="d1" type="button" onclick="document.getElementById('day').innerHTML = Date()" >
+    Click here</button>
+    <hr>
+    <img id="gif" src="D:\Photos\pic_bulboff.gif" alt="pic_bulboff" width="100" height="180">
+    <p>
+      <button type="button" onclick="light(1)">Light On</button>
+      <button type="button" onclick="light(2)">Light Off</button>
+    </p>
+    <script type="text/javascript">
+      function light(sw){
+        var pic;
+        if (sw === 0){
+          pic = "D:\Photos\pic_bulboff.gif";
+        }
+        else{
+          pic = "D:\Photos\pic_bulboff.gif"
+        }
+        document.getElementById("gif").src = pic;
+      }
+    </script>
+</body>
+</html>
